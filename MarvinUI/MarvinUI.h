@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double MarvinUIVersionNumber;
 FOUNDATION_EXPORT const unsigned char MarvinUIVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MarvinUI/PublicHeader.h>
-
-
