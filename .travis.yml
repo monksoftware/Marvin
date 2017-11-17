@@ -3,16 +3,13 @@ osx_image: xcode9.1
 
 xcode_project: Marvin.xcodeproj
 
-env:
-  - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
+env: 
+    - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
 
 xcode_scheme:
-  - Marvin
-    script:
-    - xcodebuild clean && xcodebuild -project Marvin.xcodeproj -scheme Marvin
-    - xcodebuild -project Marvin.xcodeproj -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'
-  
-  - MarvinUI
-    script: 
-    - xcodebuild clean && xcodebuild -project Marvin.xcodeproj -scheme MarvinUI
-    - xcodebuild -project Marvin.xcodeproj -scheme MarvinUI -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'
+    - Marvin
+    - MarvinUI
+    
+script: 
+    - if [ "$xcode_scheme" = "Marvin" ]; xcodebuild clean && xcodebuild -project Marvin.xcodeproj -scheme MarvinUI && xcodebuild -project Marvin.xcodeproj -scheme MarvinUI -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'; fi 
+    - if [ "$xcode_scheme" = "MarvinUI"]; xcodebuild clean && xcodebuild -project Marvin.xcodeproj -scheme Marvin && xcodebuild -project Marvin.xcodeproj -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'; fi
