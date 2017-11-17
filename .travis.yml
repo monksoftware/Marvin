@@ -19,3 +19,13 @@ script:
       if [ $TRAVIS_XCODE_SCHEME == "Marvin" ]; then 
         xcodebuild clean build test -project Marvin.xcodeproj -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'; 
       fi
+
+notifications:
+    slack: monk:RpAnzCI98kpQLAkIGXEMGZSH
+    email:
+        recipients:
+        - arsuffi@webmonks.it
+        - cardaci@webmonks.it
+        - lancellotti@webmonks.it
+        on_success: never # default: change
+        on_failure: always # default: always
