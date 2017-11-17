@@ -13,11 +13,11 @@ xcode_scheme:
 script: 
     - |
       if [ $TRAVIS_XCODE_SCHEME == "MarvinUI" ]; then 
-        xcodebuild clean build test -project Marvin.xcodeproj -scheme MarvinUI -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'; 
+        xcodebuild -project Marvin.xcodeproj -scheme MarvinUI -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1' test; 
       fi
     - |
       if [ $TRAVIS_XCODE_SCHEME == "Marvin" ]; then 
-        xcodebuild clean build test -project Marvin.xcodeproj -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'; 
+        xcodebuild clean build -project Marvin.xcodeproj -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1' test; 
       fi
 
 notifications:
