@@ -12,7 +12,7 @@ env:
 
 script: 
   - xcodebuild clean
-  - xcodebuild -project xcode_project -scheme Marvin
-  - xcodebuild -project xcode_project -scheme MarvinUI
-  - xcodebuild -project xcode_project -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'
-  - xcodebuild -project xcode_project -scheme MarvinUI -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'
+  - xcodebuild -project Marvin.xcodeproj -scheme Marvin
+  - xcodebuild -project Marvin.xcodeproj -scheme MarvinUI
+  - xcodebuild -project Marvin.xcodeproj -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'
+  - xcodebuild -project Marvin.xcodeproj -scheme MarvinUI -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'
