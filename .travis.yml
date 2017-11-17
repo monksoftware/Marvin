@@ -12,10 +12,10 @@ xcode_scheme:
     
 script: 
     - |
-      if [ $xcode_scheme = "MarvinUI" ]; then 
+      if [ "$xcode_scheme" == "MarvinUI" ]; then 
         xcodebuild clean && xcodebuild -project Marvin.xcodeproj -scheme MarvinUI && xcodebuild -project Marvin.xcodeproj -scheme MarvinUI -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'; 
       fi
     - |
-      if [ $xcode_scheme = "Marvin" ]; then 
+      if [ "$xcode_scheme" == "Marvin" ]; then 
         xcodebuild clean && xcodebuild -project Marvin.xcodeproj -scheme Marvin && xcodebuild -project Marvin.xcodeproj -scheme Marvin -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.1'; 
       fi
