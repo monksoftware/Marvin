@@ -31,7 +31,7 @@ class DateTests: XCTestCase {
             return
         }
         
-        let calendar = Calendar.current
+        let calendar = Calendar(identifier: .gregorian)
         let components = calendar.dateComponents([.year, .month, .day], from: date)
         
         let day = components.day
@@ -57,7 +57,7 @@ class DateTests: XCTestCase {
         XCTAssertNotNil(millisecondsFromDate)
         
         let newDate = Date(milliseconds: millisecondsFromDate)
-        let calendar = Calendar.current
+        let calendar = Calendar(identifier: .gregorian)
         let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: newDate)
         
         let day = components.day
