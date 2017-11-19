@@ -93,6 +93,6 @@ class DateTests: XCTestCase {
         }
         
         let dateString = date.string(dateFormat: "yyyy MM dd HH:mm:ss")
-        XCTAssertEqual(dateString, "2017 11 17 12:55:02")
+        XCTAssertEqual(dateString, "2017 11 17 11:55:02")
     }
 }

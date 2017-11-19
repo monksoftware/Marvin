@@ -36,10 +36,12 @@ public extension Date {
     ///   - format: Date format (ex: "yyyy mm dd")
     ///    default: yyyy mm dd
     ///   - locale: locale identifier, default "it_IT"
+    ///   - timezone: timezone identifier, default: "UTC"
     /// - Returns: a string from date
-    public func string(dateFormat format: String? = "yyyy MM dd", locale: String = "it_IT") -> String {
+    public func string(dateFormat format: String? = "yyyy MM dd", locale: String = "it_IT", timezone: String = "UTC") -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: locale)
+        dateFormatter.timeZone = TimeZone(identifier: timezone)
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
