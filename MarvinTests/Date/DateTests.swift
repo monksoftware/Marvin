@@ -58,7 +58,8 @@ class DateTests: XCTestCase {
         XCTAssertNotNil(millisecondsFromDate)
         
         let newDate = Date(milliseconds: millisecondsFromDate)
-        let calendar = Calendar(identifier: .gregorian)
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(identifier: "UTC")!
         let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: newDate)
         
         let day = components.day
@@ -69,7 +70,7 @@ class DateTests: XCTestCase {
         let seconds = components.second
         
         XCTAssertEqual(seconds, 2)
-        XCTAssertEqual(hour, 12)
+        XCTAssertEqual(hour, 11)
         XCTAssertEqual(minute, 55)
         XCTAssertEqual(day, 17)
         XCTAssertEqual(month, 11)
