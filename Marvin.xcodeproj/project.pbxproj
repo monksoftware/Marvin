@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA6879BB1FBF0570007EDE31 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6879BA1FBF0570007EDE31 /* DateTests.swift */; };
 		CA82EDEA1FBDF1310002EED5 /* Marvin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA82EDE01FBDF1310002EED5 /* Marvin.framework */; };
 		CA82EDEF1FBDF1310002EED5 /* MarvinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82EDEE1FBDF1310002EED5 /* MarvinTests.swift */; };
 		CA82EDF11FBDF1310002EED5 /* Marvin.h in Headers */ = {isa = PBXBuildFile; fileRef = CA82EDE31FBDF1310002EED5 /* Marvin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA82EE081FBDF50B0002EED5 /* MarvinUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA82EDFF1FBDF50A0002EED5 /* MarvinUI.framework */; };
 		CA82EE0D1FBDF50B0002EED5 /* MarvinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82EE0C1FBDF50B0002EED5 /* MarvinUITests.swift */; };
 		CA82EE0F1FBDF50B0002EED5 /* MarvinUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CA82EE011FBDF50A0002EED5 /* MarvinUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA82EE191FBE06CF0002EED5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82EE181FBE06CF0002EED5 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA6879BA1FBF0570007EDE31 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		CA82EDE01FBDF1310002EED5 /* Marvin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Marvin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA82EDE31FBDF1310002EED5 /* Marvin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marvin.h; sourceTree = "<group>"; };
 		CA82EDE41FBDF1310002EED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		CA82EE071FBDF50B0002EED5 /* MarvinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA82EE0C1FBDF50B0002EED5 /* MarvinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvinUITests.swift; sourceTree = "<group>"; };
 		CA82EE0E1FBDF50B0002EED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA82EE181FBE06CF0002EED5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA6879B91FBF055C007EDE31 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				CA6879BA1FBF0570007EDE31 /* DateTests.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 		CA82EDD61FBDF1310002EED5 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 		CA82EDE21FBDF1310002EED5 /* Marvin */ = {
 			isa = PBXGroup;
 			children = (
+				CA82EE171FBE06BA0002EED5 /* Date */,
 				CA82EDE31FBDF1310002EED5 /* Marvin.h */,
 				CA82EDE41FBDF1310002EED5 /* Info.plist */,
 			);
@@ -115,6 +128,7 @@
 		CA82EDED1FBDF1310002EED5 /* MarvinTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA6879B91FBF055C007EDE31 /* Date */,
 				CA82EDEE1FBDF1310002EED5 /* MarvinTests.swift */,
 				CA82EDF01FBDF1310002EED5 /* Info.plist */,
 			);
@@ -137,6 +151,14 @@
 				CA82EE0E1FBDF50B0002EED5 /* Info.plist */,
 			);
 			path = MarvinUITests;
+			sourceTree = "<group>";
+		};
+		CA82EE171FBE06BA0002EED5 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				CA82EE181FBE06CF0002EED5 /* Date.swift */,
+			);
+			path = Date;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +267,7 @@
 				TargetAttributes = {
 					CA82EDDF1FBDF1310002EED5 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					CA82EDE81FBDF1310002EED5 = {
@@ -317,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA82EE191FBE06CF0002EED5 /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA82EDEF1FBDF1310002EED5 /* MarvinTests.swift in Sources */,
+				CA6879BB1FBF0570007EDE31 /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +500,7 @@
 		CA82EDF51FBDF1310002EED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -489,6 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = it.monksoftware.Marvin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -497,6 +524,7 @@
 		CA82EDF61FBDF1310002EED5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -519,6 +547,7 @@
 		CA82EDF81FBDF1310002EED5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F58KBNBNQS;
 				INFOPLIST_FILE = MarvinTests/Info.plist;
@@ -533,6 +562,7 @@
 		CA82EDF91FBDF1310002EED5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F58KBNBNQS;
 				INFOPLIST_FILE = MarvinTests/Info.plist;
