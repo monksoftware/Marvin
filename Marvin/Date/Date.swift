@@ -32,8 +32,14 @@ public extension Date {
     /// - Parameter format: Date format (ex: "yyyy mm dd")
     ///    default: yyyy mm dd
     /// - Returns: a string from date
-    public func string(dateFormat format: String? = "yyyy MM dd") -> String {
+    
+    ///   - format: Date format (ex: "yyyy mm dd")
+    ///    default: yyyy mm dd
+    ///   - locale: locale identifier, default "it_IT"
+    /// - Returns: a string from date
+    public func string(dateFormat format: String? = "yyyy MM dd", locale: String = "it_IT") -> String {
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: locale)
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }

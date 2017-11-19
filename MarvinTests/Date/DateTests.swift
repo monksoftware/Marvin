@@ -31,7 +31,8 @@ class DateTests: XCTestCase {
             return
         }
         
-        let calendar = Calendar(identifier: .gregorian)
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.locale = Locale(identifier: "it_IT")
         let components = calendar.dateComponents([.year, .month, .day], from: date)
         
         let day = components.day
