@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		CA6879BB1FBF0570007EDE31 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6879BA1FBF0570007EDE31 /* DateTests.swift */; };
 		CA82EDEA1FBDF1310002EED5 /* Marvin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA82EDE01FBDF1310002EED5 /* Marvin.framework */; };
-		CA82EDEF1FBDF1310002EED5 /* MarvinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82EDEE1FBDF1310002EED5 /* MarvinTests.swift */; };
 		CA82EDF11FBDF1310002EED5 /* Marvin.h in Headers */ = {isa = PBXBuildFile; fileRef = CA82EDE31FBDF1310002EED5 /* Marvin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA82EE081FBDF50B0002EED5 /* MarvinUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA82EDFF1FBDF50A0002EED5 /* MarvinUI.framework */; };
-		CA82EE0D1FBDF50B0002EED5 /* MarvinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82EE0C1FBDF50B0002EED5 /* MarvinUITests.swift */; };
 		CA82EE0F1FBDF50B0002EED5 /* MarvinUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CA82EE011FBDF50A0002EED5 /* MarvinUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA82EE191FBE06CF0002EED5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA82EE181FBE06CF0002EED5 /* Date.swift */; };
 /* End PBXBuildFile section */
@@ -40,13 +38,11 @@
 		CA82EDE31FBDF1310002EED5 /* Marvin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marvin.h; sourceTree = "<group>"; };
 		CA82EDE41FBDF1310002EED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA82EDE91FBDF1310002EED5 /* MarvinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA82EDEE1FBDF1310002EED5 /* MarvinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvinTests.swift; sourceTree = "<group>"; };
 		CA82EDF01FBDF1310002EED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA82EDFF1FBDF50A0002EED5 /* MarvinUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarvinUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA82EE011FBDF50A0002EED5 /* MarvinUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarvinUI.h; sourceTree = "<group>"; };
 		CA82EE021FBDF50A0002EED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA82EE071FBDF50B0002EED5 /* MarvinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA82EE0C1FBDF50B0002EED5 /* MarvinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvinUITests.swift; sourceTree = "<group>"; };
 		CA82EE0E1FBDF50B0002EED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA82EE181FBE06CF0002EED5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				CA6879B91FBF055C007EDE31 /* Date */,
-				CA82EDEE1FBDF1310002EED5 /* MarvinTests.swift */,
 				CA82EDF01FBDF1310002EED5 /* Info.plist */,
 			);
 			path = MarvinTests;
@@ -147,7 +142,6 @@
 		CA82EE0B1FBDF50B0002EED5 /* MarvinUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CA82EE0C1FBDF50B0002EED5 /* MarvinUITests.swift */,
 				CA82EE0E1FBDF50B0002EED5 /* Info.plist */,
 			);
 			path = MarvinUITests;
@@ -348,7 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA82EDEF1FBDF1310002EED5 /* MarvinTests.swift in Sources */,
 				CA6879BB1FBF0570007EDE31 /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA82EE0D1FBDF50B0002EED5 /* MarvinUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
