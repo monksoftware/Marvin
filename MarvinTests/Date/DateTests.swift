@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Marvin
 
 class DateTests: XCTestCase {
     
