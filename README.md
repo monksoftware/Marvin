@@ -20,6 +20,11 @@ Every Foundation and non UI extensions are here to help you.
 
 Every UIKit extensions you need can be found here.
 
+## Installation
+
+### Carthage
+    github 'monksoftware/Marvin'
+
 Made with ❤️ in Italy, by [Monk](https://www.monksoftware.it "Monk's homepage")
 
 <p align="left" >
