@@ -1,14 +1,11 @@
 ![Language](https://img.shields.io/badge/Language-Swift-orange.svg)
 [![license](https://img.shields.io/github/license/monksoftware/marvin.svg)]()
 [![GitHub release](https://img.shields.io/github/release/monksoftware/marvin.svg)]()
-
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Core build status: [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5a10ddc94cdd210001ef257b&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5a10ddc94cdd210001ef257b/build/latest?branch=master)
 
 UI build status: [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5a10dff2e964a00001cd9d12&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5a10dff2e964a00001cd9d12/build/latest?branch=master)
-
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
 
 ### A set of Swift extensions you write every time create a new app.
 
