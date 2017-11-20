@@ -7,6 +7,8 @@ Core build status: [![BuddyBuild](https://dashboard.buddybuild.com/api/statusIma
 
 UI build status: [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=5a10dff2e964a00001cd9d12&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/5a10dff2e964a00001cd9d12/build/latest?branch=master)
 
+Made with ❤️ in Italy, by [Monk](https://www.monksoftware.it "Monk's homepage")
+
 ### A set of Swift extensions you write every time create a new app.
 
 ### It contains two targets, Marvin & MarvinUI.
@@ -19,3 +21,4 @@ Every Foundation and non UI extensions are here to help you.
 # MarvinUI
 
 Every UIKit extensions you need can be found here.
+
