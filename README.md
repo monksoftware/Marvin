@@ -3,7 +3,9 @@
 ## Installation
 
 ### Carthage
+```
 github 'monksoftware/Marvin'
+```
 
 Made with ❤️ in Italy, by [Monk](https://www.monksoftware.it "Monk's homepage")
 
