@@ -1,7 +1,7 @@
 import XCTest
 
-import MarvinPackageTests
+import MarvinTests
 
 var tests = [XCTestCaseEntry]()
-tests += MarvinPackageTests.allTests()
+tests += MarvinTests.allTests()
 XCTMain(tests)
