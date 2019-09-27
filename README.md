@@ -2,6 +2,13 @@
 
 ## Installation
 
+### Swift Package Manager
+```
+dependencies: [
+    .package(url: "https://github.com/monksoftware/Marvin.git", from: "1.0.0")
+]
+```
+
 ### Carthage
 ```
 github 'monksoftware/Marvin'

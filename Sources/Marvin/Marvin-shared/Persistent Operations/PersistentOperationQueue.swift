@@ -86,7 +86,7 @@ public class PersistentOperationQueue {
         do {
             var newList = list
             
-            guard let index = newList.index(of: entry) else {
+            guard let index = newList.firstIndex(of: entry) else {
                 return true
             }
             
