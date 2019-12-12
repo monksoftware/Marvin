@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name = "Marvin"
-  s.version = "0.5.1"
+  s.version = "0.5.2"
   
   s.license = 'MIT'
   s.swift_versions = '5.0'

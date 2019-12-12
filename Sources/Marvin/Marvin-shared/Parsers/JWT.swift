@@ -6,7 +6,11 @@
 //
 
 import Foundation
+
 public struct JWT {
+    
+    public init() {}
+    
     public func decode<T: Codable>(jwtToken jwt: String) -> T? {
         
         func base64UrlDecode(_ value: String) -> Data? {
