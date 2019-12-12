@@ -24,7 +24,7 @@ public struct JWT {
             return Data(base64Encoded: base64, options: .ignoreUnknownCharacters)
         }
         
-        public  func decodeJWTPart(_ value: String) -> T? {
+        func decodeJWTPart(_ value: String) -> T? {
             guard let data = base64UrlDecode(value) else {
                 return nil
             }
