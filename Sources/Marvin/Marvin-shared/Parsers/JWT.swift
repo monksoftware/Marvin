@@ -6,8 +6,8 @@
 //
 
 import Foundation
-struct JWT {
-    func decode<T: Codable>(jwtToken jwt: String) -> T? {
+public struct JWT {
+    public func decode<T: Codable>(jwtToken jwt: String) -> T? {
         
         func base64UrlDecode(_ value: String) -> Data? {
             var base64 = value
@@ -24,7 +24,7 @@ struct JWT {
             return Data(base64Encoded: base64, options: .ignoreUnknownCharacters)
         }
         
-        func decodeJWTPart(_ value: String) -> T? {
+        public  func decodeJWTPart(_ value: String) -> T? {
             guard let data = base64UrlDecode(value) else {
                 return nil
             }
